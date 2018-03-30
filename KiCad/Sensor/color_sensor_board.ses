@@ -1,0 +1,268 @@
+
+(session color_sensor_board.ses
+  (base_design color_sensor_board.dsn)
+  (placement
+    (resolution um 10)
+    (component MOUNT_HOLE_4_40
+      (place MOUNT_HOLE_2 1701800 -533400 front 0)
+      (place MOUNT_HOLE_1 1295400 -533400 front 0)
+      (place MOUNT_HOLE_4 1701800 -736600 front 0)
+      (place MOUNT_HOLE_3 1295400 -736600 front 0)
+    )
+    (component Capacitors_SMD:C_0805_HandSoldering
+      (place "C1 0.1uF" 1611000 -548000 front 0)
+    )
+    (component Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm
+      (place P1 1648000 -590000 back 0)
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm
+      (place P2 1299000 -679000 front 180)
+    )
+    (component "SMD_Packages:SOIC-8-N"
+      (place U1 1498600 -635000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version 4.0.7)
+    )
+    (library_out 
+      (padstack "Via[0-1]_889:635_um"
+        (shape
+          (circle Front 8890 0 0)
+        )
+        (shape
+          (circle Back 8890 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /5V
+        (wire
+          (path Front 3048
+            1640783 -590407
+            1608692 -558317
+            1598500 -558317
+          )
+        )
+        (wire
+          (path Front 3048
+            1642209 -590000
+            1641801 -590408
+            1640783 -590408
+            1640783 -590407
+          )
+        )
+        (wire
+          (path Front 3048
+            1517650 -593468
+            1524257 -593468
+            1533488 -602699
+            1628491 -602699
+            1640783 -590407
+          )
+        )
+        (wire
+          (path Front 3048
+            1598500 -548000
+            1598500 -558317
+          )
+        )
+        (wire
+          (path Front 3048
+            1517650 -603250
+            1517650 -593468
+          )
+        )
+        (wire
+          (path Front 3048
+            1648000 -590000
+            1642209 -590000
+          )
+        )
+      )
+      (net /FREQ
+        (wire
+          (path Front 3048
+            1622600 -666200
+            1610033 -666200
+          )
+        )
+        (wire
+          (path Front 3048
+            1504950 -603250
+            1504950 -613032
+          )
+        )
+        (wire
+          (path Front 3048
+            1504950 -613032
+            1556865 -613032
+            1610033 -666200
+          )
+        )
+      )
+      (net /S0
+        (wire
+          (path Back 3048
+            1648000 -640800
+            1635433 -640800
+          )
+        )
+        (wire
+          (path Front 3048
+            1479550 -666750
+            1479550 -656968
+          )
+        )
+        (wire
+          (path Back 3048
+            1591301 -669935
+            1607604 -653632
+            1627809 -653632
+            1635433 -646008
+            1635433 -640800
+          )
+        )
+        (via "Via[0-1]_889:635_um" 1591301 -669935
+        )
+        (wire
+          (path Front 3048
+            1479550 -656968
+            1578334 -656968
+            1591301 -669935
+          )
+        )
+      )
+      (net /S1
+        (wire
+          (path Front 3048
+            1648000 -666200
+            1635433 -666200
+          )
+        )
+        (wire
+          (path Front 3048
+            1492250 -666750
+            1492250 -676532
+          )
+        )
+        (wire
+          (path Front 3048
+            1492250 -676532
+            1494618 -678900
+            1627941 -678900
+            1635433 -671408
+            1635433 -666200
+          )
+        )
+      )
+      (net /S2
+        (wire
+          (path Front 3048
+            1648000 -691600
+            1635433 -691600
+          )
+        )
+        (wire
+          (path Front 3048
+            1492250 -603250
+            1492250 -593468
+          )
+        )
+        (wire
+          (path Front 3048
+            1492250 -593468
+            1474874 -593468
+            1467170 -601172
+            1467170 -676815
+            1494900 -704545
+            1627696 -704545
+            1635433 -696808
+            1635433 -691600
+          )
+        )
+      )
+      (net /S3
+        (wire
+          (path Front 3048
+            1479550 -603250
+            1479550 -613032
+          )
+        )
+        (wire
+          (path Front 3048
+            1479550 -613032
+            1472943 -619639
+            1472943 -674296
+            1490247 -691600
+            1622600 -691600
+          )
+        )
+      )
+      (net /blue
+        (wire
+          (path Back 3048
+            1299000 -679000
+            1311567 -679000
+          )
+        )
+        (wire
+          (path Back 3048
+            1610033 -640800
+            1349767 -640800
+            1311567 -679000
+          )
+        )
+        (wire
+          (path Back 3048
+            1622600 -640800
+            1610033 -640800
+          )
+        )
+      )
+      (net /green
+        (wire
+          (path Back 3048
+            1299000 -653600
+            1311567 -653600
+          )
+        )
+        (wire
+          (path Back 3048
+            1311567 -653600
+            1349767 -615400
+            1622600 -615400
+          )
+        )
+      )
+      (net /red
+        (wire
+          (path Front 3048
+            1622600 -590000
+            1610033 -590000
+          )
+        )
+        (wire
+          (path Front 3048
+            1299000 -628200
+            1311567 -628200
+          )
+        )
+        (wire
+          (path Front 3048
+            1311567 -628200
+            1351995 -587772
+            1607805 -587772
+            1610033 -590000
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,156 @@
+(pcb /home/jo/work/colorimeter/kicad_design/rgb_led_board/rgb_led_board.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "Kicad's PCBNEW")
+    (host_version "(2011-07-19)-testing")
+  )
+  (resolution mil 10)
+  (unit mil)
+  (structure
+    (layer Front
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer Back
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  4800 -2000  3000 -2000  3000 -3000  4800 -3000  4800 -2000)
+    )
+    (via "Via[0-1]_35:25_mil" "Via[0-1]_35:0_mil")
+    (rule
+      (width 12)
+      (clearance 10.1)
+      (clearance 10.1 (type default_smd))
+      (clearance 2.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component SM0805
+      (place R1 3450 -2350 front 0 (PN 90))
+      (place R2 3450 -2500 front 0 (PN 90))
+      (place R3 3450 -2650 front 0 (PN 150))
+    )
+    (component RGB_MULTILED
+      (place U1 3900 -2500 front 0 (PN RGB_MULTILED))
+    )
+    (component MOUNT_HOLE_4_40
+      (place M1 3100 -2100 front 0)
+      (place M2 3100 -2900 front 0)
+      (place M3 4700 -2900 front 0)
+      (place M4 4700 -2100 front 0)
+    )
+    (component smt
+      (place P1 4540 -2475 front 90 (PN CONN_4))
+    )
+  )
+  (library
+    (image SM0805
+      (outline (path signal 5  -60 -30  -60.3 -31.5  -61 -32.9  -62.1 -34  -63.5 -34.7
+            -65 -35  -66.5 -34.7  -67.9 -34  -69 -32.9  -69.7 -31.5  -70 -30
+            -69.7 -28.5  -69 -27.1  -67.9 -26  -66.5 -25.3  -65 -25  -63.5 -25.3
+            -62.1 -26  -61 -27.1  -60.3 -28.5))
+      (outline (path signal 5  -20 -30  -60 -30))
+      (outline (path signal 5  -60 -30  -60 30))
+      (outline (path signal 5  -60 30  -20 30))
+      (outline (path signal 5  20 30  60 30))
+      (outline (path signal 5  60 30  60 -30))
+      (outline (path signal 5  60 -30  20 -30))
+      (pin Rect[T]Pad_35x55_mil 1 -37.5 0)
+      (pin Rect[T]Pad_35x55_mil 2 37.5 0)
+    )
+    (image RGB_MULTILED
+      (outline (path signal 15  59.1 -98.4  -59.1 -98.4))
+      (outline (path signal 15  -59.1 -98.4  -59.1 78.7))
+      (outline (path signal 15  -59.1 78.7  -39.4 98.4))
+      (outline (path signal 15  -39.4 98.4  59.1 98.4))
+      (outline (path signal 15  59.1 98.4  59.1 -98.4))
+      (pin Rect[T]Pad_51.2x27.6_mil (rotate 180) A3 58.1 -43.3)
+      (pin Rect[T]Pad_51.2x27.6_mil (rotate 180) A2 58.1 0)
+      (pin Rect[T]Pad_51.2x27.6_mil (rotate 180) A1 58.1 43.3)
+      (pin Rect[T]Pad_51.2x27.6_mil (rotate 180) C3 -58.1 -43.3)
+      (pin Rect[T]Pad_51.2x27.6_mil (rotate 180) C2 -58.1 0)
+      (pin Rect[T]Pad_51.2x27.6_mil (rotate 180) C1 -58.1 43.3)
+    )
+    (image MOUNT_HOLE_4_40
+      (pin Round[A]Pad_130_mil @1 0 0)
+    )
+    (image smt
+      (outline (path signal 15  -220 260  220 260))
+      (outline (path signal 15  220 260  220 -260))
+      (outline (path signal 15  220 -260  -220 -260))
+      (outline (path signal 15  -220 -260  -220 260))
+      (pin Rect[T]Pad_50x250_mil 1 -150 99.8)
+      (pin Rect[T]Pad_50x250_mil 2 -50 -99.8)
+      (pin Rect[T]Pad_50x250_mil 3 50 99.8)
+      (pin Rect[T]Pad_50x250_mil 4 150 -99.8)
+    )
+    (padstack Round[A]Pad_130_mil
+      (shape (circle Front 130))
+      (shape (circle Back 130))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_35x55_mil
+      (shape (rect Front -17.5 -27.5 17.5 27.5))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_50x250_mil
+      (shape (rect Front -25 -125 25 125))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_51.2x27.6_mil
+      (shape (rect Front -25.6 -13.8 25.6 13.8))
+      (attach off)
+    )
+    (padstack "Via[0-1]_35:25_mil"
+      (shape (circle Front 35))
+      (shape (circle Back 35))
+      (attach off)
+    )
+    (padstack "Via[0-1]_35:0_mil"
+      (shape (circle Front 35))
+      (shape (circle Back 35))
+      (attach off)
+    )
+  )
+  (network
+    (net /blue
+      (pins U1-A1 P1-1)
+    )
+    (net /green
+      (pins U1-A2 P1-2)
+    )
+    (net /red
+      (pins U1-A3 P1-3)
+    )
+    (net GND
+      (pins R1-2 R2-2 R3-2 P1-4)
+    )
+    (net "N-000002"
+      (pins R2-1 U1-C2)
+    )
+    (net "N-000003"
+      (pins R3-1 U1-C3)
+    )
+    (net "N-000004"
+      (pins R1-1 U1-C1)
+    )
+    (class kicad_default "" /blue /green /red GND "N-000002" "N-000003" "N-000004"
+      (circuit
+        (use_via Via[0-1]_35:25_mil)
+      )
+      (rule
+        (width 12)
+        (clearance 10.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

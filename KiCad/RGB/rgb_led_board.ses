@@ -1,0 +1,207 @@
+
+(session rgb_led_board.ses
+  (base_design rgb_led_board.dsn)
+  (placement
+    (resolution mil 10)
+    (component SM0805
+      (place R1 34500 -23500 front 0)
+      (place R2 34500 -25000 front 0)
+      (place R3 34500 -26500 front 0)
+    )
+    (component RGB_MULTILED
+      (place U1 39000 -25000 front 0)
+    )
+    (component MOUNT_HOLE_4_40
+      (place M1 31000 -21000 front 0)
+      (place M2 31000 -29000 front 0)
+      (place M3 47000 -29000 front 0)
+      (place M4 47000 -21000 front 0)
+    )
+    (component smt
+      (place P1 45400 -24750 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution mil 10)
+    (parser
+      (host_cad "Kicad's PCBNEW")
+      (host_version "(2011-07-19)-testing")
+    )
+    (library_out 
+      (padstack "Via[0-1]_35:25_mil"
+        (shape
+          (circle Front 350 0 0)
+        )
+        (shape
+          (circle Back 350 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_35:0_mil"
+        (shape
+          (circle Front 350 0 0)
+        )
+        (shape
+          (circle Back 350 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /blue
+        (wire
+          (path Front 120
+            44402 -26250
+            38955 -26250
+            38921 -26216
+            38921 -24732
+            39086 -24567
+            39581 -24567
+          )
+        )
+      )
+      (net /green
+        (wire
+          (path Front 120
+            39581 -25000
+            39162 -25000
+          )
+        )
+        (wire
+          (path Front 120
+            46398 -25250
+            44985 -25250
+          )
+        )
+        (wire
+          (path Front 120
+            44985 -25250
+            44500 -25735
+            39195 -25735
+            39162 -25702
+            39162 -25000
+          )
+        )
+      )
+      (net /red
+        (wire
+          (path Front 120
+            44402 -24250
+            42989 -24250
+          )
+        )
+        (wire
+          (path Front 120
+            42989 -24250
+            41806 -25433
+            39581 -25433
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path Front 120
+            34875 -25444
+            34875 -25000
+          )
+        )
+        (wire
+          (path Front 120
+            34875 -26500
+            34875 -25444
+          )
+        )
+        (wire
+          (path Front 120
+            34875 -25444
+            33820 -25444
+            33786 -25410
+            33786 -23071
+            33796 -23061
+            34436 -23061
+            34875 -23500
+          )
+        )
+        (wire
+          (path Front 120
+            34875 -23500
+            35213 -23500
+          )
+        )
+        (wire
+          (path Front 120
+            46398 -23250
+            35463 -23250
+            35213 -23500
+          )
+        )
+      )
+      (net "N-000002"
+        (wire
+          (path Front 120
+            34125 -25000
+            34463 -25000
+          )
+        )
+        (wire
+          (path Front 120
+            38419 -25000
+            35555 -25000
+            35116 -24561
+            34564 -24561
+            34463 -24662
+            34463 -25000
+          )
+        )
+      )
+      (net "N-000003"
+        (wire
+          (path Front 120
+            38419 -25433
+            38000 -25433
+          )
+        )
+        (wire
+          (path Front 120
+            34125 -26500
+            34463 -26500
+          )
+        )
+        (wire
+          (path Front 120
+            34463 -26500
+            34463 -26838
+            34564 -26939
+            36494 -26939
+            38000 -25433
+          )
+        )
+      )
+      (net "N-000004"
+        (wire
+          (path Front 120
+            38419 -24567
+            38000 -24567
+          )
+        )
+        (wire
+          (path Front 120
+            34125 -23500
+            34463 -23500
+          )
+        )
+        (wire
+          (path Front 120
+            34463 -23500
+            34463 -23838
+            34891 -24266
+            37699 -24266
+            38000 -24567
+          )
+        )
+      )
+    )
+  )
+)

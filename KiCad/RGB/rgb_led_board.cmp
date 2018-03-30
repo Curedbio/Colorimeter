@@ -1,0 +1,38 @@
+Cmp-Mod V01 Created by CvPCB (2011-07-19)-testing date = Fri 02 Mar 2012 03:26:25 PM PST
+
+BeginCmp
+TimeStamp = /4F345F7F;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = smt_4-pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F035CCA;
+Reference = R1;
+ValeurCmp = 90;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F035CCF;
+Reference = R2;
+ValeurCmp = 90;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F035CD1;
+Reference = R3;
+ValeurCmp = 150;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F035E14;
+Reference = U1;
+ValeurCmp = RGB_MULTILED;
+IdModule  = RGB_MULTILED;
+EndCmp
+
+EndListe

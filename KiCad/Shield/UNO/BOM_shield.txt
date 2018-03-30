@@ -1,0 +1,4 @@
+part     decription                        vendor   PN                  QTY
+----------------------------------------------------------------------------------
+P1       5x2 shrouded header	           Digikey	S9169-ND             1
+P2       0.1" breakaway male pin header    Digikey  SAM1031-30-ND        1
