@@ -1,3 +1,4 @@
 # Colorimeter
 Educational open-sopurce colorimeter
-__Derived from  IO Rodeo's OSHW Colorimeter__
+
+*Derived from IO Rodeo's OSHW Colorimeter*
