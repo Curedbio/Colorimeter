@@ -1,7 +1,10 @@
 # Colorimeter
-Educational open-source colorimeter
+
 
 ![alt text](https://github.com/Curedbio/Colorimeter/blob/master/IMG_5134-Editar_white_small.png)
+
+
+Educational open-source colorimeter
 
 - Arduino UNO based.
 - Sensor TCS3200.
